@@ -1,3 +1,12 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: dylan
+ * @Date: 2020-06-17 12:32:18
+ * @LastEditors: dylan
+ * @LastEditTime: 2020-06-29 20:43:57
+-->
+
 <template>
   <div id="app">
     <div id="nav">
