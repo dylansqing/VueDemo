@@ -4,25 +4,27 @@
  * @Author: dylan
  * @Date: 2020-06-17 12:32:18
  * @LastEditors: dylan
- * @LastEditTime: 2020-06-29 20:50:49
+ * @LastEditTime: 2020-07-10 12:59:44
 -->
 <template>
   <div class="map">
-    <baidu-map class="bm-view" :center="init.mapCenter" :zoom="15">
-      <bm-marker
-        v-for="item in init.markerPosition"
-        :position="item"
-        :dragging="true"
-        :key="item"
-        animation="BMAP_ANIMATION_BOUNCE"
-      >
-        <bm-label
-          content="XXXXX"
-          :labelStyle="{ color: '#1565C0', fontSize: '14px' }"
-          :offset="{ width: -35, height: 30 }"
-        />
-      </bm-marker>
-    </baidu-map>
+    <el-card shadow="always">
+      <baidu-map class="bm-view" :center="init.mapCenter" :zoom="15">
+        <bm-marker
+          v-for="item in init.markerPosition"
+          :position="item"
+          :dragging="true"
+          :key="item"
+          animation="BMAP_ANIMATION_BOUNCE"
+        >
+          <bm-label
+            content="XXXXX"
+            :labelStyle="{ color: '#1565C0', fontSize: '14px' }"
+            :offset="{ width: -35, height: 30 }"
+          />
+        </bm-marker>
+      </baidu-map>
+    </el-card>
   </div>
 </template>
 
@@ -56,7 +58,7 @@ export default {
 }
 
 .bm-view {
-  height: 80vh;
+  height: 85vh;
   width: 100%;
 }
 </style>
